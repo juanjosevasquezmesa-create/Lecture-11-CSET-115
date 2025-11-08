@@ -9,7 +9,7 @@ def find_missing(arr):
     max_ = max(arr)
     if max_ < 1:  # All negative values in the array
         return 1
-    if len(arr) is 1:
+    if len(arr) == 1:
         return 2 if arr[0] == 1 else 1
     list1 = [0] * max_  # Making a zero value list
     for i in range(len(arr)):
